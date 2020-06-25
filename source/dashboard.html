@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- BEGIN HEAD -->
+
+@@include('common/head.include')
+
+<!-- END HEAD -->
+
+<body
+	class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white white-sidebar-color logo-indigo">
+	<div class="page-wrapper">
+		<!-- start header -->
+		@@include('common/header.include')
+		<!-- end header -->
+
+		<!-- start color quick setting -->
+		@@include('common/colorquicksetting.include')
+		<!-- end color quick setting -->
+
+		<!-- start page container -->
+		<div class="page-container">
+			<!-- start sidebar menu -->
+			@@include('common/sidebarmenu.include')
+			<!-- end sidebar menu -->
+
+			<!-- start page content -->
+			
+			@@include('init.include')
+
+			<!-- end page content -->
+
+			<!-- start chat sidebar -->
+			@@include('common/chatsidebar.include')
+			<!-- end chat sidebar -->
+		</div>
+		<!-- end page container -->
+
+		<!-- start footer -->
+			@@include('common/footer.include')
+		<!-- end footer -->
+	</div>
+
+	<!-- start js include path -->
+	@@include('common/scripts.include')
+	<!-- end js include path -->
+</body>
+
+</html>

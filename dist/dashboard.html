@@ -456,64 +456,149 @@
 			<!-- end sidebar menu -->
 
 			<!-- start page content -->
+			
+			
+
+			<!-- start page content -->
 			<div class="page-content-wrapper">
 				<div class="page-content">
 					<div class="page-bar">
 						<div class="page-title-breadcrumb">
 							<div class=" pull-left">
-								<div class="page-title">Agenda asistencial</div>
+								<div class="page-title">Cuadro de mando</div>
 							</div>
 							<ol class="breadcrumb page-breadcrumb pull-right">
 								<li><i class="fa fa-home"></i>&nbsp;<a class="parent-item"
 										href="index.html">Inicio</a>&nbsp;<i class="fa fa-angle-right"></i>
 								</li>
-								<li><a class="parent-item" href="">Agenda</a>&nbsp;<i
-										class="fa fa-angle-right"></i>
-								</li>
-								<li class="active">Asistencial</li>
+								<li class="active">Cuadro de mando</li>
 							</ol>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="row">
-								<div class="col-md-9 col-sm-12">
-									<div class="panel">
-										<header class="panel-heading panel-heading-blue">
-											Calendario</header>
-										<div class="panel-body">
-											<div id="calendar" class="has-toolbar"> </div>
+					<!-- start widget -->
+					<div class="state-overview">
+						<div class="row">
+							<div class="col-xl-3 col-md-6 col-12">
+								<div class="info-box bg-blue">
+									<span class="info-box-icon push-bottom"><i class="material-icons">group</i></span>
+									<div class="info-box-content">
+										<span class="info-box-text">Citas</span>
+										<span class="info-box-number">450</span>
+										<div class="progress">
+											<div class="progress-bar" style="width: 45%"></div>
 										</div>
+										<span class="progress-description">
+											45% incremento en un mes
+										</span>
+									</div>
+									<!-- /.info-box-content -->
+								</div>
+								<!-- /.info-box -->
+							</div>
+							<!-- /.col -->
+							<div class="col-xl-3 col-md-6 col-12">
+								<div class="info-box bg-orange">
+									<span class="info-box-icon push-bottom"><i class="material-icons">person</i></span>
+									<div class="info-box-content">
+										<span class="info-box-text">Pacientes nuevos</span>
+										<span class="info-box-number">155</span>
+										<div class="progress">
+											<div class="progress-bar" style="width: 40%"></div>
+										</div>
+										<span class="progress-description">
+											40% Increase in un mes
+										</span>
+									</div>
+									<!-- /.info-box-content -->
+								</div>
+								<!-- /.info-box -->
+							</div>
+							<!-- /.col -->
+							<div class="col-xl-3 col-md-6 col-12">
+								<div class="info-box bg-purple">
+									<span class="info-box-icon push-bottom"><i
+											class="material-icons">content_cut</i></span>
+									<div class="info-box-content">
+										<span class="info-box-text">Cirugías</span>
+										<span class="info-box-number">52</span>
+										<div class="progress">
+											<div class="progress-bar" style="width: 85%"></div>
+										</div>
+										<span class="progress-description">
+											85% incremento en un mes
+										</span>
+									</div>
+									<!-- /.info-box-content -->
+								</div>
+								<!-- /.info-box -->
+							</div>
+							<!-- /.col -->
+							<div class="col-xl-3 col-md-6 col-12">
+								<div class="info-box bg-success">
+									<span class="info-box-icon push-bottom"><i
+											class="material-icons">monetization_on</i></span>
+									<div class="info-box-content">
+										<span class="info-box-text">Facturación</span>
+										<span class="info-box-number">13,921 K</span><span>€</span>
+										<div class="progress">
+											<div class="progress-bar" style="width: 50%"></div>
+										</div>
+										<span class="progress-description">
+											50% Increase en un mes
+										</span>
+									</div>
+									<!-- /.info-box-content -->
+								</div>
+								<!-- /.info-box -->
+							</div>
+							<!-- /.col -->
+						</div>
+					</div>
+					<!-- end widget -->
+					<!-- chart start -->
+					<div class="row">
+						<div class="col-md-8">
+							<div class="card card-box">
+								<div class="card-head">
+									<header>NPS</header>
+									<div class="tools">
+										<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
+										<a class="t-collapse btn-color fa fa-chevron-down" href="javascript:;"></a>
+										<a class="t-close btn-color fa fa-times" href="javascript:;"></a>
 									</div>
 								</div>
-								<div class="col-md-3 col-sm-12">
-									<div class="panel">
-										<header class="panel-heading panel-heading-blue">
-											Eventos </header>
-										<div class="panel-body">
-											<div id="external-events">
-												<form class="inline-form">
-													<input type="text" value="" class="form-control"
-														placeholder="Nombre del evento..." id="event_title" />
-													<br />
-													<a href="javascript:;" id="event_add" class="btn btn-success"> Añadir evento </a>
-												</form>
-												<hr />
-												<div id="event_box" class="mg-bottom-10"></div>
-												<label class="rt-chkbox rt-chkbox-single rt-chkbox-outline"
-													for="drop-remove"> Eliminar tras agendar
-													<input type="checkbox" class="group-checkable" id="drop-remove" />
-													<span></span>
-												</label>
-											</div>
-										</div>
+								<div class="card-body no-padding height-9">
+									<div class="row">
+										<canvas id="chartjs_line"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card card-box">
+								<div class="card-head">
+									<header>NPS</header>
+									<div class="tools">
+										<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
+										<a class="t-collapse btn-color fa fa-chevron-down" href="javascript:;"></a>
+										<a class="t-close btn-color fa fa-times" href="javascript:;"></a>
+									</div>
+								</div>
+								<div class="card-body no-padding height-9">
+									<div class="row">
+										<canvas id="chartjs_doughnut"></canvas>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<!-- Chart end -->
+
 				</div>
 			</div>
+			<!-- end page content -->
+		
+
 
 			<!-- end page content -->
 
@@ -799,24 +884,45 @@
 	</div>
 
 	<!-- start js include path -->
-	<script src="../assets/bundles/jquery/jquery.min.js"></script>
+	    <script src="../assets/bundles/jquery/jquery.min.js"></script>
 	<script src="../assets/bundles/popper/popper.js"></script>
 	<script src="../assets/bundles/jquery-blockUI/jquery.blockui.min.js"></script>
 	<script src="../assets/bundles/jquery.slimscroll/jquery.slimscroll.js"></script>
-	<script src="../assets/bundles/jquery-ui/jquery-ui.min.js"></script>
+
+
 	<!-- bootstrap -->
 	<script src="../assets/bundles/bootstrap/js/bootstrap.min.js"></script>
 	<script src="../assets/bundles/bootstrap-switch/js/bootstrap-switch.min.js"></script>
-	<!-- calendar -->
-	<script src="../assets/bundles/moment/moment.min.js"></script>
-	<script src="../assets/bundles/fullcalendar/fullcalendar.min.js"></script>
-	<script src="../assets/data/calendar-data.js"></script>
+	<!-- counterup -->
+	<script src="../assets/bundles/counterup/jquery.waypoints.min.js"></script>
+	<script src="../assets/bundles/counterup/jquery.counterup.min.js"></script>
+
+	
+
+
 	<!-- Common js-->
 	<script src="../assets/app.js"></script>
 	<script src="../assets/layout.js"></script>
 	<script src="../assets/theme-color.js"></script>
-	<!-- Material -->
+	<!-- material -->
 	<script src="../assets/bundles/material/material.min.js"></script>
+	<!-- chart js -->
+	<script src="../assets/bundles/chart-js/Chart.bundle.js"></script>
+	<script src="../assets/bundles/chart-js/utils.js"></script>
+
+	<!-- task -->
+	<script src="../assets/data/home1-chartjs-data.js"></script>
+	<script src="../assets/bundles/sparkline/jquery.sparkline.js"></script>
+	<script src="../assets/data/sparkline-data.js"></script>	
+
+	<!-- owl carousel -->
+	<script src="../assets/bundles/owl-carousel/owl.carousel.js"></script>
+	<script src="../assets/data/owl-carousel-data.js"></script>	
+
+	<!-- calendar -->
+	<script src="../assets/bundles/moment/moment.min.js"></script>	
+	<script src="../assets/bundles/fullcalendar/fullcalendar.min.js"></script>
+	<script src="../assets/data/calendar-data.js"></script>
 	<!-- end js include path -->
 </body>
 

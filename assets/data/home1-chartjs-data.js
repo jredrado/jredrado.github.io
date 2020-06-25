@@ -3,16 +3,16 @@ $(document).ready(function() {
     var config= {
         type:'line', data: {
             labels:["January", "February", "March", "April", "May", "June", "July"], datasets:[ {
-                label: "New Patients", backgroundColor: window.chartColors.red, borderColor: window.chartColors.red, data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()], fill: false,
+                label: "Nuevos", backgroundColor: window.chartColors.red, borderColor: window.chartColors.red, data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()], fill: false,
             }
             , {
-                label: "Old Patients", fill: false, backgroundColor: window.chartColors.blue, borderColor: window.chartColors.blue, data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()],
+                label: "Revisiones", fill: false, backgroundColor: window.chartColors.blue, borderColor: window.chartColors.blue, data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()],
             }
             ]
         }
         , options: {
             responsive:true, title: {
-                display: true, text: 'HOSPITAL SURVEY'
+                display: true, text: 'NPS'
             }
             , tooltips: {
                 mode: 'index', intersect: false,
@@ -23,12 +23,12 @@ $(document).ready(function() {
             , scales: {
                 xAxes:[ {
                     display:true, scaleLabel: {
-                        display: true, labelString: 'Month'
+                        display: true, labelString: 'Mes'
                     }
                 }
                 ], yAxes:[ {
                     display:true, scaleLabel: {
-                        display: true, labelString: 'Patients'
+                        display: true, labelString: 'Pacientes'
                     }
                 }
                 ]

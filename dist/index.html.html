@@ -419,25 +419,25 @@
 							<li class="nav-item">
 								<a href="#" class="nav-link nav-toggle">
 									<i class="material-icons">dashboard</i>
-									<span class="title">Cuadro de mando</span>
+									<span class="title">Dashboard</span>
 									<span class="selected"></span>
 									<span class="arrow"></span>
 								</a>
 								<ul class="sub-menu">
 									<li class="nav-item  ">
-										<a href="dashboard.html" class="nav-link ">
-											<span class="title">Clinico</span>
+										<a href="index.html" class="nav-link ">
+											<span class="title">Clinicos</span>
 											<span class="selected"></span>
 										</a>
 									</li>
 									<li class="nav-item ">
-										<a href="dashboard.html" class="nav-link ">
-											<span class="title">KPIs</span>
+										<a href="dashboard2.html" class="nav-link ">
+											<span class="title">Económicos</span>
 										</a>
 									</li>
 									<li class="nav-item  ">
-										<a href="dashboard.html" class="nav-link ">
-											<span class="title">Joint Comission</span>
+										<a href="dashboard3.html" class="nav-link ">
+											<span class="title">Departamento</span>
 										</a>
 									</li>
 								</ul>
@@ -456,64 +456,358 @@
 			<!-- end sidebar menu -->
 
 			<!-- start page content -->
+			
 			<div class="page-content-wrapper">
 				<div class="page-content">
 					<div class="page-bar">
 						<div class="page-title-breadcrumb">
 							<div class=" pull-left">
-								<div class="page-title">Agenda asistencial</div>
+								<div class="page-title">Tareas</div>
 							</div>
 							<ol class="breadcrumb page-breadcrumb pull-right">
 								<li><i class="fa fa-home"></i>&nbsp;<a class="parent-item"
 										href="index.html">Inicio</a>&nbsp;<i class="fa fa-angle-right"></i>
 								</li>
-								<li><a class="parent-item" href="">Agenda</a>&nbsp;<i
-										class="fa fa-angle-right"></i>
-								</li>
-								<li class="active">Asistencial</li>
+								<li class="active">Tareas</li>
 							</ol>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="row">
-								<div class="col-md-9 col-sm-12">
-									<div class="panel">
-										<header class="panel-heading panel-heading-blue">
-											Calendario</header>
-										<div class="panel-body">
-											<div id="calendar" class="has-toolbar"> </div>
-										</div>
+                    <!-- start widget -->
+					<div class="state-overview">
+						<div class="row">
+							<div class="col-lg-3 col-sm-6">
+								<div class="overview-panel purple">
+									<div class="symbol">
+										<i class="fa fa-line-chart"></i>
+									</div>
+									<div class="value white">
+										<p class="sbold addr-font-h1" data-counter="counterup" data-value="2">0</p>
+										<p>Resultados para revisar</p>
 									</div>
 								</div>
-								<div class="col-md-3 col-sm-12">
-									<div class="panel">
-										<header class="panel-heading panel-heading-blue">
-											Eventos </header>
-										<div class="panel-body">
-											<div id="external-events">
-												<form class="inline-form">
-													<input type="text" value="" class="form-control"
-														placeholder="Nombre del evento..." id="event_title" />
-													<br />
-													<a href="javascript:;" id="event_add" class="btn btn-success"> Añadir evento </a>
-												</form>
-												<hr />
-												<div id="event_box" class="mg-bottom-10"></div>
-												<label class="rt-chkbox rt-chkbox-single rt-chkbox-outline"
-													for="drop-remove"> Eliminar tras agendar
-													<input type="checkbox" class="group-checkable" id="drop-remove" />
-													<span></span>
-												</label>
-											</div>
+							</div>
+							<div class="col-lg-3 col-sm-6">
+								<div class="overview-panel deepPink-bgcolor">
+									<div class="symbol">
+										<i class="fa fa-file-word-o"></i>
+									</div>
+									<div class="value white">
+										<p class="sbold addr-font-h1" data-counter="counterup" data-value="18">0</p>
+										<p>Informes pendientes</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-6">
+								<div class="overview-panel orange">
+									<div class="symbol">
+										<i class="fa fa-video-camera"></i>
+									</div>
+									<div class="value white">
+										<p class="sbold addr-font-h1" data-counter="counterup" data-value="1">0</p>
+										<p>Videoconsulta para hoy</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-6">
+								<div class="overview-panel blue-bgcolor">
+									<div class="symbol">
+                                        <i class="fa fa-pencil"></i>
+                                        <i class="fa fa-question"></i>
+									</div>
+									<div class="value white">
+										<p class="sbold addr-font-h1" data-counter="counterup" data-value="23">0</p>
+										<p>Consentimientos sin firmar</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>                    
+					<!-- start admited patient list -->
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="card  card-topline-yellow">
+								<div class="card-head">
+									<header>Pases de vista pendientes para hoy</header>
+									<div class="tools">
+										<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
+										<a class="t-collapse btn-color fa fa-chevron-down" href="javascript:;"></a>
+										<a class="t-close btn-color fa fa-times" href="javascript:;"></a>
+									</div>
+								</div>
+								<div class="card-body ">
+									<div class="table-wrap">
+										<div class="table-responsive">
+											<table class="table display product-overview mb-30" id="support_table">
+												<thead>
+													<tr>
+														<th>Historia</th>
+														<th>Nombre</th>
+														<th>Responsable</th>
+														<th>Fecha de ingreso</th>
+														<th>Diagnóstico</th>
+														<th>Habitación</th>
+														<th>Comentar</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>1</td>
+														<td>Jens Brincker</td>
+														<td>Dr.Kenny Josh</td>
+														<td>27/05/2020</td>
+														<td>
+															<span class="label label-sm label-success">Gripe</span>
+														</td>
+														<td>101</td>
+														<td><a href="javascript:void(0)" class="" data-toggle="tooltip"
+																title="Edit"><i class="fa fa-check"></i></a>
+															<a href="javascript:void(0)" class="text-inverse"
+																title="Delete" data-toggle="tooltip"><i
+																	class="fa fa-trash"></i></a></td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td>Mark Hay</td>
+														<td>Dr. Mark</td>
+														<td>26/05/2020</td>
+														<td>
+															<span class="label label-sm label-warning">Mieloma</span>
+														</td>
+														<td>105</td>
+														<td><a href="javascript:void(0)" class="" data-toggle="tooltip"
+																title="Edit"><i class="fa fa-check"></i></a>
+															<a href="javascript:void(0)" class="text-inverse"
+																title="Delete" data-toggle="tooltip"><i
+																	class="fa fa-trash"></i></a></td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td>Anthony Davie</td>
+														<td>Dr.Cinnabar</td>
+														<td>21/05/2020</td>
+														<td>
+															<span
+																class="label label-sm label-success ">Neumonía</span>
+														</td>
+														<td>106</td>
+														<td><a href="javascript:void(0)" class="" data-toggle="tooltip"
+																title="Edit"><i class="fa fa-check"></i></a>
+															<a href="javascript:void(0)" class="text-inverse"
+																title="Delete" data-toggle="tooltip"><i
+																	class="fa fa-trash"></i></a></td>
+													</tr>
+													<tr>
+														<td>4</td>
+														<td>David Perry</td>
+														<td>Dr.Felix </td>
+														<td>20/04/2020</td>
+														<td>
+															<span class="label label-sm label-danger">Linfoma</span>
+														</td>
+														<td>105</td>
+														<td><a href="javascript:void(0)" class="" data-toggle="tooltip"
+																title="Edit"><i class="fa fa-check"></i></a>
+															<a href="javascript:void(0)" class="text-inverse"
+																title="Delete" data-toggle="tooltip"><i
+																	class="fa fa-trash"></i></a></td>
+													</tr>
+													<tr>
+														<td>5</td>
+														<td>Anthony Davie</td>
+														<td>Dr.Beryl</td>
+														<td>24/05/2020</td>
+														<td>
+															<span
+																class="label label-sm label-success ">Hidatidosis</span>
+														</td>
+														<td>102</td>
+														<td><a href="javascript:void(0)" class="" data-toggle="tooltip"
+																title="Edit"><i class="fa fa-check"></i></a>
+															<a href="javascript:void(0)" class="text-inverse"
+																title="Delete" data-toggle="tooltip"><i
+																	class="fa fa-trash"></i></a></td>
+													</tr>
+													<tr>
+														<td>6</td>
+														<td>Alan Gilchrist</td>
+														<td>Dr.Joshep</td>
+														<td>22/05/2020</td>
+														<td>
+															<span class="label label-sm label-warning ">Hepatitis</span>
+														</td>
+														<td>103</td>
+														<td><a href="javascript:void(0)" class="" data-toggle="tooltip"
+																title="Edit"><i class="fa fa-check"></i></a>
+															<a href="javascript:void(0)" class="text-inverse"
+																title="Delete" data-toggle="tooltip"><i
+																	class="fa fa-trash"></i></a></td>
+													</tr>
+													<tr>
+														<td>7</td>
+														<td>Mark Hay</td>
+														<td>Dr.Jayesh</td>
+														<td>18/06/2020</td>
+														<td>
+															<span class="label label-sm label-success ">Tifus</span>
+														</td>
+														<td>107</td>
+														<td><a href="javascript:void(0)" class="" data-toggle="tooltip"
+																title="Edit"><i class="fa fa-check"></i></a>
+															<a href="javascript:void(0)" class="text-inverse"
+																title="Delete" data-toggle="tooltip"><i
+																	class="fa fa-trash"></i></a></td>
+													</tr>
+													<tr>
+														<td>8</td>
+														<td>Sue Woodger</td>
+														<td>Dr.Sharma</td>
+														<td>17/05/2020</td>
+														<td>
+															<span class="label label-sm label-danger">Malaria</span>
+														</td>
+														<td>108</td>
+														<td><a href="javascript:void(0)" class="" data-toggle="tooltip"
+																title="Edit"><i class="fa fa-check"></i></a>
+															<a href="javascript:void(0)" class="text-inverse"
+																title="Delete" data-toggle="tooltip"><i
+																	class="fa fa-trash"></i></a></td>
+													</tr>
+												</tbody>
+											</table>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+
 					</div>
+                    <!-- end admited patient list -->
+					<div class="row">
+						<div class="col-md-4 col-sm-12 col-xs-12">
+							<div class="card  card-topline-aqua">
+								<div class="card-head">
+									<header>ANOTACIONES PERSONALES</header>
+									<div class="tools">
+										<a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
+										<a class="t-collapse btn-color fa fa-chevron-down" href="javascript:;"></a>
+										<a class="t-close btn-color fa fa-times" href="javascript:;"></a>
+									</div>
+								</div>
+								<div class="card-body no-padding height-9">
+									<div class="row">
+										<ul class="to-do-list ui-sortable" id="sortable-todo">
+											<li class="clearfix">
+												<div class="todo-check pull-left">
+													<input type="checkbox" value="None" id="todo-check1">
+													<label for="todo-check1"></label>
+												</div>
+												<p class="todo-title">Comentar paciente Dr. Pérez
+												</p>
+												<div class="todo-actionlist pull-right clearfix">
+													<a href="#" class="todo-remove"><i class="fa fa-times"></i></a>
+												</div>
+											</li>
+											<li class="clearfix">
+												<div class="todo-check pull-left">
+													<input type="checkbox" value="None" id="todo-check2">
+													<label for="todo-check2"></label>
+												</div>
+												<p class="todo-title">Revisar datos para la tesis 
+												</p>
+												<div class="todo-actionlist pull-right clearfix">
+													<a href="#" class="todo-remove"><i class="fa fa-times"></i></a>
+												</div>
+											</li>
+											<li class="clearfix">
+												<div class="todo-check pull-left">
+													<input type="checkbox" value="None" id="todo-check3">
+													<label for="todo-check3"></label>
+												</div>
+												<p class="todo-title">Cambiar guardia del jueves</p>
+												<div class="todo-actionlist pull-right clearfix">
+													<a href="#" class="todo-remove"><i class="fa fa-times"></i></a>
+												</div>
+											</li>
+											<li class="clearfix">
+												<div class="todo-check pull-left">
+													<input type="checkbox" value="None" id="todo-check4">
+													<label for="todo-check4"></label>
+												</div>
+												<p class="todo-title">Revisar videos de formación Joint
+												</p>
+												<div class="todo-actionlist pull-right clearfix">
+													<a href="#" class="todo-remove"><i class="fa fa-times"></i></a>
+												</div>
+											</li>
+											
+										</ul>
+									</div>
+									<div class="box-footer">
+										<form action="#" method="post">
+											<div class="input-group">
+												<input type="text" name="message" placeholder="Anotar una nueva tarea"
+													class="form-control">
+												<span class="input-group-btn">
+													<button type="submit" class="btn btn-warning btn-flat">Añadir</button>
+												</span> </div>
+										</form>
+									</div>
+								</div>
+							</div>
+                        </div>
+						<div class="col-md-4 col-sm-4">
+                            <div class="card  card-topline-green">
+                                <div class="card-head">
+                                    <header>Tareas automáticas</header>
+                                    <div class="tools">
+                                        <a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
+	                                    <a class="t-collapse btn-color fa fa-chevron-down" href="javascript:;"></a>
+	                                    <a class="t-close btn-color fa fa-times" href="javascript:;"></a>
+                                    </div>
+                                </div>
+                                <div class="card-body ">
+                                    <div class="task-body task-panel">
+									<div class="list-group mb-0">
+										<a href="#" class="list-group-item">
+											<span class="badge badge-info">Ahora</span>
+											<i class="fa fa-calendar"></i> Nueva cita. Revisar historia 38484
+										</a>
+										<a href="#" class="list-group-item">
+											<span class="badge badge-info">Ahora</span>
+											<i class="fa fa-calendar"></i> Nueva cita. Revisar historia 33393
+										</a>
+										<a href="#" class="list-group-item">
+											<span class="badge  badge-success">Hace 4 minutos</span>
+											<i class="fa fa-comment"></i> Comentario en nota de evolución 4567
+										</a>
+										<a href="#" class="list-group-item">
+											<span class="badge badge-warning">Hace 24 minutos</span>
+											<i class="fa fa-truck"></i> Prótesis paciente 2334 recibida
+										</a>
+										<a href="#" class="list-group-item">
+											<span class="badge  badge-success">46 minutes ago</span>
+											<i class="fa fa-money"></i> Validar presupuesto 653
+										</a>
+                                        <a href="#" class="list-group-item">
+											<span class="badge badge-info">Ahora</span>
+											<i class="fa fa-calendar"></i> Nueva cita. Revisar historia 13393
+										</a>
+										<a href="#" class="list-group-item">
+											<span class="badge  badge-danger">Hace 2 horas</span>
+											<i class="fa fa-check"></i> Paciente 23355: Alta a domicilio
+										</a>
+									</div>
+								</div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>  
+
+
+					<!-- end widget -->
+			
 				</div>
-			</div>
+			</div>			
 
 			<!-- end page content -->
 
@@ -799,24 +1093,45 @@
 	</div>
 
 	<!-- start js include path -->
-	<script src="../assets/bundles/jquery/jquery.min.js"></script>
+	    <script src="../assets/bundles/jquery/jquery.min.js"></script>
 	<script src="../assets/bundles/popper/popper.js"></script>
 	<script src="../assets/bundles/jquery-blockUI/jquery.blockui.min.js"></script>
 	<script src="../assets/bundles/jquery.slimscroll/jquery.slimscroll.js"></script>
-	<script src="../assets/bundles/jquery-ui/jquery-ui.min.js"></script>
+
+
 	<!-- bootstrap -->
 	<script src="../assets/bundles/bootstrap/js/bootstrap.min.js"></script>
 	<script src="../assets/bundles/bootstrap-switch/js/bootstrap-switch.min.js"></script>
-	<!-- calendar -->
-	<script src="../assets/bundles/moment/moment.min.js"></script>
-	<script src="../assets/bundles/fullcalendar/fullcalendar.min.js"></script>
-	<script src="../assets/data/calendar-data.js"></script>
+	<!-- counterup -->
+	<script src="../assets/bundles/counterup/jquery.waypoints.min.js"></script>
+	<script src="../assets/bundles/counterup/jquery.counterup.min.js"></script>
+
+	
+
+
 	<!-- Common js-->
 	<script src="../assets/app.js"></script>
 	<script src="../assets/layout.js"></script>
 	<script src="../assets/theme-color.js"></script>
-	<!-- Material -->
+	<!-- material -->
 	<script src="../assets/bundles/material/material.min.js"></script>
+	<!-- chart js -->
+	<script src="../assets/bundles/chart-js/Chart.bundle.js"></script>
+	<script src="../assets/bundles/chart-js/utils.js"></script>
+
+	<!-- task -->
+	<script src="../assets/data/home1-chartjs-data.js"></script>
+	<script src="../assets/bundles/sparkline/jquery.sparkline.js"></script>
+	<script src="../assets/data/sparkline-data.js"></script>	
+
+	<!-- owl carousel -->
+	<script src="../assets/bundles/owl-carousel/owl.carousel.js"></script>
+	<script src="../assets/data/owl-carousel-data.js"></script>	
+
+	<!-- calendar -->
+	<script src="../assets/bundles/moment/moment.min.js"></script>	
+	<script src="../assets/bundles/fullcalendar/fullcalendar.min.js"></script>
+	<script src="../assets/data/calendar-data.js"></script>
 	<!-- end js include path -->
 </body>
 
