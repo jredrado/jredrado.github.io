@@ -26,10 +26,14 @@
 
 	<!-- full calendar -->
 	<link href="../assets/bundles/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
-	
+
 	<!-- Owl Carousel Assets -->
 	<link href="../assets/bundles/owl-carousel/owl.carousel.css" rel="stylesheet">
 	<link href="../assets/bundles/owl-carousel/owl.theme.css" rel="stylesheet">
+	
+	<!-- data tables -->
+	<link href="../assets/bundles/datatables/plugins/bootstrap/dataTables.bootstrap4.min.css" rel="stylesheet"
+		type="text/css" />
 
 	<!-- favicon -->
 	<link rel="shortcut icon" href="img/favicon.ico" />
