@@ -1,0 +1,36 @@
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta name="description" content="Clínica Universidad de Navarra" />
+	<meta name="author" content="JR" />
+	<title>Clínica Universidad de Navarra</title>
+	<!-- google font -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet"
+		type="text/css" />
+	<!-- icons -->
+	<link href="../assets/bundles/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<!--bootstrap -->
+	<link href="../assets/bundles/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<!-- Material Design Lite CSS -->
+	<link rel="stylesheet" href="../assets/bundles/material/material.min.css">
+	<link rel="stylesheet" href="css/material_style.css">
+	<!-- Theme Styles -->
+	<link href="css/theme_style.css" rel="stylesheet" id="rt_style_components" type="text/css" />
+	<link href="css/plugins.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/responsive.css" rel="stylesheet" type="text/css" />
+	<link href="css/theme-color.css" rel="stylesheet" type="text/css" />
+
+	<!-- full calendar -->
+	<link href="../assets/bundles/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+	
+	<!-- Owl Carousel Assets -->
+	<link href="../assets/bundles/owl-carousel/owl.carousel.css" rel="stylesheet">
+	<link href="../assets/bundles/owl-carousel/owl.theme.css" rel="stylesheet">
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico" />
+</head>

@@ -1,0 +1,39 @@
+    <script src="../assets/bundles/jquery/jquery.min.js"></script>
+	<script src="../assets/bundles/popper/popper.js"></script>
+	<script src="../assets/bundles/jquery-blockUI/jquery.blockui.min.js"></script>
+	<script src="../assets/bundles/jquery.slimscroll/jquery.slimscroll.js"></script>
+
+
+	<!-- bootstrap -->
+	<script src="../assets/bundles/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../assets/bundles/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+	<!-- counterup -->
+	<script src="../assets/bundles/counterup/jquery.waypoints.min.js"></script>
+	<script src="../assets/bundles/counterup/jquery.counterup.min.js"></script>
+
+	
+
+
+	<!-- Common js-->
+	<script src="../assets/app.js"></script>
+	<script src="../assets/layout.js"></script>
+	<script src="../assets/theme-color.js"></script>
+	<!-- material -->
+	<script src="../assets/bundles/material/material.min.js"></script>
+	<!-- chart js -->
+	<script src="../assets/bundles/chart-js/Chart.bundle.js"></script>
+	<script src="../assets/bundles/chart-js/utils.js"></script>
+
+	<!-- task -->
+	<script src="../assets/data/home1-chartjs-data.js"></script>
+	<script src="../assets/bundles/sparkline/jquery.sparkline.js"></script>
+	<script src="../assets/data/sparkline-data.js"></script>	
+
+	<!-- owl carousel -->
+	<script src="../assets/bundles/owl-carousel/owl.carousel.js"></script>
+	<script src="../assets/data/owl-carousel-data.js"></script>	
+
+	<!-- calendar -->
+	<script src="../assets/bundles/moment/moment.min.js"></script>	
+	<script src="../assets/bundles/fullcalendar/fullcalendar.min.js"></script>
+	<script src="../assets/data/calendar-data.js"></script>

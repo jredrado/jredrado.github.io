@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- BEGIN HEAD -->
+
+@@include('common/head.include')
+
+<!-- END HEAD -->
+
+<body
+	class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white white-sidebar-color logo-indigo">
+	<div class="page-wrapper">
+		<!-- start header -->
+		@@include('common/header.include')
+		<!-- end header -->
+
+		<!-- start color quick setting -->
+		@@include('common/colorquicksetting.include')
+		<!-- end color quick setting -->
+
+		<!-- start page container -->
+		<div class="page-container">
+			<!-- start sidebar menu -->
+			@@include('common/sidebarmenu.include')
+			<!-- end sidebar menu -->
+
+			<!-- start page content -->
+			<div class="page-content-wrapper">
+				<div class="page-content">
+					<div class="page-bar">
+						<div class="page-title-breadcrumb">
+							<div class=" pull-left">
+								<div class="page-title">Agenda asistencial</div>
+							</div>
+							<ol class="breadcrumb page-breadcrumb pull-right">
+								<li><i class="fa fa-home"></i>&nbsp;<a class="parent-item"
+										href="index.html">Inicio</a>&nbsp;<i class="fa fa-angle-right"></i>
+								</li>
+								<li><a class="parent-item" href="">Agenda</a>&nbsp;<i
+										class="fa fa-angle-right"></i>
+								</li>
+								<li class="active">Asistencial</li>
+							</ol>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-9 col-sm-12">
+									<div class="panel">
+										<header class="panel-heading panel-heading-blue">
+											Calendario</header>
+										<div class="panel-body">
+											<div id="calendar" class="has-toolbar"> </div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-12">
+									<div class="panel">
+										<header class="panel-heading panel-heading-blue">
+											Eventos </header>
+										<div class="panel-body">
+											<div id="external-events">
+												<form class="inline-form">
+													<input type="text" value="" class="form-control"
+														placeholder="Nombre del evento..." id="event_title" />
+													<br />
+													<a href="javascript:;" id="event_add" class="btn btn-success"> Añadir evento </a>
+												</form>
+												<hr />
+												<div id="event_box" class="mg-bottom-10"></div>
+												<label class="rt-chkbox rt-chkbox-single rt-chkbox-outline"
+													for="drop-remove"> Eliminar tras agendar
+													<input type="checkbox" class="group-checkable" id="drop-remove" />
+													<span></span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- end page content -->
+
+			<!-- start chat sidebar -->
+			@@include('common/chatsidebar.include')
+			<!-- end chat sidebar -->
+		</div>
+		<!-- end page container -->
+
+		<!-- start footer -->
+			@@include('common/footer.include')
+		<!-- end footer -->
+	</div>
+
+	<!-- start js include path -->
+	<script src="../assets/bundles/jquery/jquery.min.js"></script>
+	<script src="../assets/bundles/popper/popper.js"></script>
+	<script src="../assets/bundles/jquery-blockUI/jquery.blockui.min.js"></script>
+	<script src="../assets/bundles/jquery.slimscroll/jquery.slimscroll.js"></script>
+	<script src="../assets/bundles/jquery-ui/jquery-ui.min.js"></script>
+	<!-- bootstrap -->
+	<script src="../assets/bundles/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../assets/bundles/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+	<!-- calendar -->
+	<script src="../assets/bundles/moment/moment.min.js"></script>
+	<script src="../assets/bundles/fullcalendar/fullcalendar.min.js"></script>
+	<script src="../assets/data/calendar-data.js"></script>
+	<!-- Common js-->
+	<script src="../assets/app.js"></script>
+	<script src="../assets/layout.js"></script>
+	<script src="../assets/theme-color.js"></script>
+	<!-- Material -->
+	<script src="../assets/bundles/material/material.min.js"></script>
+	<!-- end js include path -->
+</body>
+
+</html>
